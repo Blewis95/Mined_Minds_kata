@@ -1,5 +1,5 @@
 x = 0
 
-10.times do
+100.times do
 	puts x+=1
 end
