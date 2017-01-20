@@ -6,18 +6,33 @@ counter = 0
 random_holder1 = 0
 random_holder2 = 0
 
+
 	for i in 0..length
-		final_array[counter] = (group_array = [names_array[random_holder1], names_array[random_holder2]])
+
 		random_holder1 = random_number_generator_function(length)
 		random_holder2 = random_number_generator_function(length)
+
+		#endless loop----------------------------
+		# while random_holder2 == random_holder1 do 
+		# 	random_holder2 = random_number_generator_function(length)
+		# end
+
+
+		final_array[counter] = [[names_array[random_holder1], names_array[random_holder2]]]
+
+
+
 		names_array.delete_at(random_holder1)
 		names_array.delete_at(random_holder2)
+
 		length = names_array.length
+
+		counter += 1
+
 	end
 
-	#puts final_array
 	final_array
-
+	
 end
 
 
