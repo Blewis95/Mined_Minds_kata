@@ -4,7 +4,7 @@ require_relative "pairing_code.rb"
 class Test_minedminds_kata_pairing < Minitest::Test
 
 	def test_full_array
-		assert_equal(6, pairing_function().length)
+		assert_equal(7, pairing_function().length)
 	end
 
 	def test_first_element_exists
@@ -33,5 +33,9 @@ class Test_minedminds_kata_pairing < Minitest::Test
 
 	def test_7th_element_exists
 		assert_equal(nil, pairing_function()[6])
+	end
+	
+	def test_rand_test
+		assert_equal(1,random_number_generator_function(13))
 	end
 end
