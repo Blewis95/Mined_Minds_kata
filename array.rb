@@ -14,9 +14,6 @@ def MinedMindsKata()
 		p1.insert((x-1),x)
 	end
 
-
-	
-
 	x+=1
 
 	
